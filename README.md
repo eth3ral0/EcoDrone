@@ -7,6 +7,7 @@
 This GitHub repository focuses **only on the software and data acquisition aspects** of the project, as I was personally in charge of the **SIN (Information and Digital Systems)** domain.
 
 > ⚠️ I do **not cover** the structural, aerodynamic or mechanical design of the aircraft, as they were handled by other team members in ITEC specialization.
+> I apologize in advance for the lack of data, but I've tried to reconstruct our project as coherently as possible.
 
 ---
 
@@ -116,9 +117,31 @@ We began by testing a single brushless motor using:
 
 💡 *Purpose:* validate PWM control and current logging on one motor safely.
 
-📁 Code: [`/code/test_single_motor.ino`](#)
+📁 Code: 
 
-📸 *[Insert photo/video/capture of the test]*
+```c++
+#include <Servo.h>
+
+Servo esc3;   
+
+int val = 0;
+
+void setup() {
+   pinMode(3, OUTPUT);
+
+   esc3.attach(3, 1000, 2000); 
+   esc3.writeMicroseconds(1000);
+   delay(2000);
+
+   }
+
+void loop() {
+
+   esc3.write(100);
+   delay(15);
+
+   }
+```
 
 ---
 
@@ -139,14 +162,23 @@ We implemented:
 
 ---
 
-### ✅ Summary of Results
+## Conclusion of this project
 
-- 🧠 Each component responded correctly to Arduino commands
-- ⚙️ The ESCs successfully handled the load under test
-- 🔁 The servo rotation mechanism worked as expected
-- ⚠️ Safety measures were necessary due to **high thrust**
+### Problems encountered :
 
----
+- When we did our first tests, the motors worked individually, but when we connected the second brushless motor afterwards, the program stopped working and the motors stayed still instead of rotating. So after hours and hours of research x) We found that the problem was only due to the calibration of the brushless motors, so we integrated it into our program and everything works perfectly.
+
+- During the brushless motor study, a simple wiring error caused us to burn out two current sensors. Because we found that we couldn't measure current and voltage simultaneously during the test.
+
+### Conclusion:
+
+Despite the technical problems encountered, this was a very rewarding project, given that I'm a high-school student, and it enabled me to put into practice the knowledge I'd acquired in previous years. It also taught me that small tools can create something impressive, and can serve as a strong argument for innovative solutions.
+
+### What I learned:
+
+- Dare to take on new projects as long as you've got the basics, even if it's difficult, as long as you keep looking and keep trying, you'll always learn something.
+- For my next projects, especially personal and at university, I'll try to document my tests and research as best I can, because when I was synthesizing this project, I realized how little information I had.
+- Research electronic components in detail (datasheets), as minor errors can destroy the component or put your safety at risk.
 
 📦 All test programs are available in the `/code/` directory with comments.
 
