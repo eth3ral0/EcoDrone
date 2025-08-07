@@ -133,24 +133,9 @@ We implemented:
 
 ⚠️ The setup was very powerful and required secure mounting during testing.
 
-📁 Code: [`/code/test_4_motors.ino`](#)
+📁 Code: [`/code/test_4_motors.ino`](final_prog/final_prog.ino)
 
 📸 *[Insert photo or video of 4 motors test]*
-
----
-
-### 🔹 3. Test with 2 Servo Motors (Motor Rotation)
-
-To switch between **VTOL mode (vertical)** and **cruise mode (horizontal)**, we added:
-- **2 servo motors** attached to a support mechanism
-- Servo angle controlled via PWM
-- Motors were rotated from 90° (vertical) to 0° (horizontal)
-
-💡 *Purpose:* simulate the **in-flight rotation system** to transition between phases.
-
-📁 Code: [`/code/test_motors_and_servos.ino`](#)
-
-📸 *[Insert photo or capture of the servo + motors moving]*
 
 ---
 
