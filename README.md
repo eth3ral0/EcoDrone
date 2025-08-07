@@ -20,12 +20,12 @@ EcoDrone is a **VTOL hybrid drone-airplane** capable of:
 The context of the project was to think of a more energy-efficient and faster alternative in the field of delivery (pharmaceutical products, food, etc.).
 The goal is to explore __innovative solutions__ to improve the **energy efficiency** of lightweight aerial systems by combining the **advantages of drones, helicopters, and airplanes**.
 
-
-
 ## Prerequisite (SIN scope)
 
+- The aircraft model we'll be using is **Krick Klemm L 25d E 1:7 kit** [link](https://www.r-models.eu/kits-a-construire/1151-avion-en-kit-klemm-l25d-e-lasercut-1859mm-krick-402579214391.html)
+
 - **Arduino UNO** (data logging & sensor acquisition)
-- **4x A2212 13T 1000Kv brushless motor**
+- **4x A2212 13T 1000Kv Brushless Motor**
 - **2X SG90 9g Micro Servo**
 - **ACS712** current sensor
 - **DC0-25V** voltage sensor
@@ -33,7 +33,13 @@ The goal is to explore __innovative solutions__ to improve the **energy efficien
 ### 🧰 Tools/Softwares used
 
 - **Arduino IDE** (C++)
-- 
+- **digital laser tachometer**
+- **multimeter**
+- **SolidWork** (for the simulation)
+
+##  Getting Started – Project Workflow
+
+
 
 ---
 
