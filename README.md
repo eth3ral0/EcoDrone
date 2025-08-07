@@ -43,11 +43,18 @@ In this project, my role was to :
 - Design the Arduino programs for the quadrotor vertical takeoff mode and the twin-engine horizontal glide mode.
 - Study the energy consumption of these 2 operating modes
 
-### 🔍 Study of the A2212 Brushless Motor
+## 🔍 Study of the A2212 Brushless Motor
 🎯 __Objective :__
-Understand the electrical behavior of the A2212 1000KV brushless motor to estimate its current consumption based on the input PWM signal,
-and to model its relation with power and rotational speed (RPM).
 
+This section presents the analysis of the **A2212 1000KV brushless motor** behavior based on the **PWM pulse width** applied via Arduino.  
+The study aims to model the **current**, **power**, and **RPM** responses to help optimize energy use in our hybrid drone system.
+
+## 1. 📈 Current vs. PWM Pulse Width
+
+Using the collected data, we established the relationship between **current (I)** and **PWM pulse width**.  
+The best-fit model is a **quadratic regression** *(using ChatGPT)*: 
+
+$$I = -7.399880 × 10⁻⁷ × PWM² + 2.824110 × 10⁻³ × PWM - 1.979421$$
 
 
 
