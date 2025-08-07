@@ -22,15 +22,18 @@ The goal is to explore __innovative solutions__ to improve the **energy efficien
 
 
 
-## 🧠 Prerequisite (SIN scope)
+## Prerequisite (SIN scope)
 
 - **Arduino UNO** (data logging & sensor acquisition)
 - **4x A2212 13T 1000Kv brushless motor**
+- **2X SG90 9g Micro Servo**
 - **ACS712** current sensor
-- **C++ / Arduino IDE**
-- **Serial monitoring & data logging (.txt)**
-- Signal modulation: **PWM control for motors**
-- Plotting and modeling of power curves (Python or Excel)
+- **DC0-25V** voltage sensor
+
+### 🧰 Tools/Softwares used
+
+- **Arduino IDE** (C++)
+- 
 
 ---
 
