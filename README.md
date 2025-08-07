@@ -27,6 +27,7 @@ The goal is to explore __innovative solutions__ to improve the **energy efficien
 
 - **Arduino UNO** (data logging & sensor acquisition)
 - **4x A2212 13T 1000Kv Brushless Motor**
+- **4x LiPo 3S battery (2600 to 3200 mAh)**
 - **ESC**
 - **2X SG90 9g Micro Servo**
 - **ACS712** current sensor
@@ -163,21 +164,26 @@ We implemented:
 
 📁 Code: [`/code/test_4_motors.ino`](final_prog/final_prog.ino)
 
-📸 *[Insert photo or video of 4 motors test]*
-
 ---
 
 ## Conclusion of this project
 
+> SolidWork simulation of takeoff mode (quadrotor) : [here](https://github.com/user-attachments/assets/cc8a4fbf-887d-470e-b178-39e1f3d946ab)
+
+> SolidWork simulation of leveling mode (bimotor) : [here](https://github.com/user-attachments/assets/95568220-fe7e-48d8-a944-b3fb4c063d3b)
+
+> 3d Plane Screenshot : <img width="1182" height="820" alt="image" src="https://github.com/user-attachments/assets/89b64557-a9aa-4211-951a-ced54fe134c6" />
+
+
 ### Problems encountered :
 
 - When we did our first tests, the motors worked individually, but when we connected the second brushless motor afterwards, the program stopped working and the motors stayed still instead of rotating. So after hours and hours of research x) We found that the problem was only due to the calibration of the brushless motors, so we integrated it into our program and everything works perfectly.
-
 - During the brushless motor study, a simple wiring error caused us to burn out two current sensors. Because we found that we couldn't measure current and voltage simultaneously during the test.
+- Batteries are discharged quickly because powerful motors consume electricity quickly.
 
 ### Conclusion :
 
-Despite the technical problems encountered, this was a very rewarding project, given that I'm a high-school student, and it enabled me to put into practice the knowledge I'd acquired in previous years. It also taught me that small tools can create something impressive, and can serve as a strong argument for innovative solutions.
+Despite the technical problems encountered, this was a very rewarding project, given that I'm a high-school student, and it enabled me to put into practice the knowledge I'd acquired in previous years. It also taught me that small tools can create something impressive, and can serve as a strong argument for innovative solutions. 
 
 ### What I learned :
 
@@ -185,7 +191,7 @@ Despite the technical problems encountered, this was a very rewarding project, g
 - For my next projects, especially personal and at university, I'll try to document my tests and research as best I can, because when I was synthesizing this project, I realized how little information I had.
 - Research electronic components in detail (datasheets), as minor errors can destroy the component or put your safety at risk.
 
-📦 All test programs are available in the `/code/` directory with comments.
+📦 All ressources are available in the `/code/` directory with comments.
 
 ---
 
