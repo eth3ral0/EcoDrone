@@ -20,7 +20,7 @@ EcoDrone is a **VTOL hybrid drone-airplane** capable of:
 The context of the project was to think of a more energy-efficient and faster alternative in the field of delivery (pharmaceutical products, food, etc.).
 The goal is to explore __innovative solutions__ to improve the **energy efficiency** of lightweight aerial systems by combining the **advantages of drones, helicopters, and airplanes**.
 
-## Prerequisite (SIN scope)
+## 🧰 Prerequisite (SIN scope)
 
 - The aircraft model we'll be using is **Krick Klemm L 25d E 1:7 kit** [link](https://www.r-models.eu/kits-a-construire/1151-avion-en-kit-klemm-l25d-e-lasercut-1859mm-krick-402579214391.html)
 
@@ -30,14 +30,25 @@ The goal is to explore __innovative solutions__ to improve the **energy efficien
 - **ACS712** current sensor
 - **DC0-25V** voltage sensor
 
-### 🧰 Tools/Softwares used
+### Tools/Softwares used
 
 - **Arduino IDE** (C++)
 - **digital laser tachometer**
 - **multimeter**
 - **SolidWork** (for the simulation)
 
-##  Getting Started – Project Workflow
+## ❗Getting Started – Project Workflow
+
+In this project, my role was to :
+- Design the Arduino programs for the quadrotor vertical takeoff mode and the twin-engine horizontal glide mode.
+- Study the energy consumption of these 2 operating modes
+
+### 🔍 Study of the A2212 Brushless Motor
+🎯 __Objective :__
+Understand the electrical behavior of the A2212 1000KV brushless motor to estimate its current consumption based on the input PWM signal,
+and to model its relation with power and rotational speed (RPM).
+
+
 
 
 
