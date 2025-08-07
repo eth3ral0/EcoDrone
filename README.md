@@ -28,7 +28,7 @@ The goal is to explore __innovative solutions__ to improve the **energy efficien
 - **Arduino UNO** (data logging & sensor acquisition)
 - **4x A2212 13T 1000Kv Brushless Motor**
 - **4x LiPo 3S battery (2600 to 3200 mAh)**
-- **ESC**
+- **4x 30A ESC**
 - **2X SG90 9g Micro Servo**
 - **ACS712** current sensor
 - **DC0-25V** voltage sensor
